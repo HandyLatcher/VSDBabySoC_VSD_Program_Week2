@@ -162,32 +162,6 @@ This keeps the workflow clean and organized for integration into the VSDBabySoC 
 
 ---
 
-Here’s a polished, professional version of your section:
-
----
-
-### 3. Run Pre-Synthesis Simulation ⚡
-
-To compile and simulate the SoC **before synthesis**, execute:
-
-```bash
-make pre_synth_sim
-```
-
-* This generates a **waveform file** in VCD format:
-
-```
-output/pre_synth_sim/pre_synth_sim.vcd
-```
-
-* The simulation allows you to verify module functionality and signal behavior prior to synthesis.
-
----
-
-Here’s a fully **polished, professional version** of that section with the **corrected `iverilog` command**, explanation, and GTKWave instructions integrated smoothly:
-
----
-
 ### 3. Run Pre-Synthesis Simulation ⚡
 
 To compile and simulate the VSDBabySoC **before synthesis**, use the following command:
