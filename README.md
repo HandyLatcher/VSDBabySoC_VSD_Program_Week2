@@ -57,8 +57,8 @@ This makes devices smaller, faster, and more energy-efficient 🔋.
 | Component | Description |
 |-----------|------------|
 | **RVMYTH CPU**  | Processes data and communicates with DAC. |
-| **PLL ** | Generates a stable clock for the CPU and DAC. |
-| **DAC ** | Converts digital signals to analog output for external devices. |
+| **PLL** | Generates a stable clock for the CPU and DAC. |
+| **DAC** | Converts digital signals to analog output for external devices. |
 
 **How it works:**
 
