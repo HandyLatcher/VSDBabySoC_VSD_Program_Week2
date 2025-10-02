@@ -177,13 +177,6 @@ iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM \
 * The `-DPRE_SYNTH_SIM` flag defines a macro for **conditional compilation** in the testbench.
 * `-I src/include -I src/module` adds the include paths for headers and Verilog modules.
 
-
-Running this command generates the **pre-synthesis waveform**:
-
-```
-output/pre_synth_sim/pre_synth_sim.vcd
-```
-
 ---
 
 ### 4. Visualize Waveforms 📊
@@ -193,6 +186,11 @@ Open the waveform in GTKWave:
 ```bash
 gtkwave output/pre_synth_sim/pre_synth_sim.vcd
 ```
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/52c117a9-eb44-4972-9654-93be945a3177" width="800" />
+</div>
+
 
 Focus on the **two key signals**:
 
