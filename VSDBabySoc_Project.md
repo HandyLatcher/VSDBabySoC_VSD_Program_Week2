@@ -156,6 +156,10 @@ gtkwave output/pre_synth_sim/pre_synth_sim.vcd
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a79f9743-97b7-4c12-b4d0-b92080914cd4" width="800" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a79f9743-97b7-4c12-b4d0-b92080914cd4" width="800" />
   <p><b>Fig: Pre-Synthesis Simulation Waveform</b></p>
 </div>
 
@@ -315,5 +319,3 @@ gtkwave output/post_synth_sim/post_synth_sim.vcd
 **VSDBabySoC** is an educational RISC-V based SoC integrating a CPU (RVMYTH), PLL, and 10-bit DAC. The project covers the complete workflow: **pre-synthesis simulation** to verify functionality, **RTL synthesis** with Yosys, and **post-synthesis simulation** to validate the synthesized design. Key signals can be observed in GTKWave, allowing hands-on experience in **SoC design, digital-to-analog interfacing, and verification**.
 
 ---
-
-
