@@ -159,9 +159,10 @@ gtkwave output/pre_synth_sim/pre_synth_sim.vcd
 </div>
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/a79f9743-97b7-4c12-b4d0-b92080914cd4" width="800" />
+  <img src="https://github.com/user-attachments/assets/a14852f7-2a88-419c-b69e-d413e64f4a3a" width="800" />
   <p><b>Fig: Pre-Synthesis Simulation Waveform</b></p>
 </div>
+
 
 ---
 
@@ -300,7 +301,11 @@ gtkwave output/post_synth_sim/post_synth_sim.vcd
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/d854c32c-2d89-4429-8a9c-429e97e089ef" width="800" />
-  <p><b>Fig: Post-Synthesis Simulation Key Signals</b></p>
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8bec70e5-c7db-4974-9c6c-24741ada09c7" width="800" />
+  <p><b>Fig: Post-Synthesis Simulation Waveform</b></p>
 </div>
 
 ---
