@@ -1,7 +1,3 @@
-Absolutely! I’ve **sprinkled emojis into the headings** to make them visually appealing while keeping the professional tone. Here’s your updated README sections:
-
----
-
 # VSDBabySoC Overview 💻
 
 **VSDBabySoC** is a compact, educational **System-on-Chip (SoC)** built around a **RISC-V processor (RVMYTH)**. It integrates a **PLL (Phase-Locked Loop)** for stable clock generation and a **10-bit DAC (Digital-to-Analog Converter)** for analog output. The design provides a hands-on platform to learn **SoC design, simulation, and digital-to-analog interfacing**.
