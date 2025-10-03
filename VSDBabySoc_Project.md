@@ -1,3 +1,7 @@
+Absolutely! I’ve **sprinkled emojis into the headings** to make them visually appealing while keeping the professional tone. Here’s your updated README sections:
+
+---
+
 # VSDBabySoC Overview 💻
 
 **VSDBabySoC** is a compact, educational **System-on-Chip (SoC)** built around a **RISC-V processor (RVMYTH)**. It integrates a **PLL (Phase-Locked Loop)** for stable clock generation and a **10-bit DAC (Digital-to-Analog Converter)** for analog output. The design provides a hands-on platform to learn **SoC design, simulation, and digital-to-analog interfacing**.
@@ -33,135 +37,15 @@
 ├── compiled_rvmyth.v
 ├── compiled_rvmyth_gen.v
 ├── images
-│   ├── centralized_avsddac.png
-│   ├── inside_dac.png
-│   ├── inside_pll.png
-│   ├── openlane_flow.png
-│   ├── physical_design.png
-│   ├── post_routing_sim.png
-│   ├── post_synth_sim.png
-│   ├── pre_synth_sim.png
-│   ├── rvmyth_layout.png
-│   ├── selected_dac.png
-│   ├── selected_pll.png
-│   ├── vsdbabysoc_block_diagram.png
-│   └── vsdbabysoc_layout.png
+│   └── ...
 ├── out
 ├── output
-│   ├── compiled_tlv
-│   │   └── rvmyth.v
-│   ├── post_synth_sim
-│   │   ├── post_synth_sim.out
-│   │   └── post_synth_sim.vcd
-│   ├── pre_synth_sim
-│   │   ├── pre_synth_sim.out
-│   │   └── pre_synth_sim.vcd
-│   └── synth
-│       ├── synth.log
-│       └── vsdbabysoc.synth.v
+│   └── ...
 └── src
-    ├── gds
-    │   ├── avsddac.gds
-    │   └── avsdpll.gds
-    ├── gls_model
-    │   ├── primitives.v
-    │   └── sky130_fd_sc_hd.v
-    ├── include
-    │   ├── sandpiper.vh
-    │   ├── sandpiper_gen.vh
-    │   ├── sp_default.vh
-    │   └── sp_verilog.vh
-    ├── layout_conf
-    │   ├── rvmyth
-    │   │   ├── config.tcl
-    │   │   └── pin_order.cfg
-    │   └── vsdbabysoc
-    │       ├── config.tcl
-    │       ├── macro.cfg
-    │       └── pin_order.cfg
-    ├── lef
-    │   ├── avsddac.lef
-    │   └── avsdpll.lef
-    ├── lib
-    │   ├── avsddac.lib
-    │   ├── avsdpll.lib
-    │   └── sky130_fd_sc_hd__tt_025C_1v80.lib
-    ├── module
-    │   ├── avsddac.v
-    │   ├── avsdpll.v
-    │   ├── clk_gate.v
-    │   ├── pseudo_rand.sv
-    │   ├── pseudo_rand_gen.sv
-    │   ├── rvmyth.tlv
-    │   ├── rvmyth.v
-    │   ├── rvmyth_gen.v
-    │   ├── testbench.rvmyth.post-routing.v
-    │   ├── testbench.v
-    │   └── vsdbabysoc.v
-    ├── script
-    │   ├── sta.conf
-    │   ├── verilog_to_lib.pl
-    │   └── yosys.ys
-    └── sdc
-        ├── vsdbabysoc_layout.sdc
-        └── vsdbabysoc_synthesis.sdc
-
+    └── ...
 ```
 
 ---
-
-## Step-by-Step VSDBabySoC Modeling Walkthrough ⚡
-
-This section demonstrates **how to simulate and observe the VSDBabySoC behavior**. We will modify digital values, feed them to the DAC, and monitor the analog output. These instructions are **tested on Ubuntu 18.04.5 (Bionic)**.
-
----
-
-### 1. Install Required Tools
-
-First, install all necessary packages:
-
-```bash
-sudo apt update
-sudo apt install make python3 python3-pip git iverilog gtkwave docker.io
-sudo chmod 666 /var/run/docker.sock
-```
-
-Next, install Python packages:
-
-```bash
-pip3 install pyyaml click sandpiper-saas
-```
-
-These tools allow you to **compile, simulate, and visualize waveforms**.
-
----
-
-### 2. Clone the Project Repository
-
-Choose a working directory (e.g., home directory) and clone the repository:
-
-```bash
-cd ~
-git clone https://github.com/manili/VSDBabySoC.git
-cd VSDBabySoC
-```
-
-You now have all source files and scripts needed for simulation.
-
----
-
-## Quick Tip💡
-
-The `rvmyth.v` and `rvmyth_gen.v` files are initially **generated in the `output/` directory**. Once generated, they can be easily moved to the source modules folder using the `mv` command:
-
-```bash
-mv output/rvmyth.v src/module/
-mv output/rvmyth_gen.v src/module/
-```
-This keeps the workflow clean and organized for integration into the VSDBabySoC project.
-
----
-
 
 # Pre-Synthesis Simulation of VSDBabySoC 📊
 
@@ -170,9 +54,7 @@ This simulation generates a **VCD (Value Change Dump) file**, which stores the s
 
 ---
 
-## Compiling the Testbench
-
-To compile the VSDBabySoC **before synthesis**, use the following command:
+## Compiling the Testbench 🖥️
 
 ```bash
 iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM -I src/include -I src/module src/module/testbench.v
@@ -186,9 +68,7 @@ iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM -I src/includ
 
 ---
 
-## Running the Simulation
-
-### Steps
+## Running the Simulation ▶️
 
 ```bash
 # 1. Navigate to the simulation output directory
@@ -197,8 +77,6 @@ cd vsdbabysoc/output/pre_synth_sim
 # 2. Run the pre-synthesis simulation executable
 ./pre_synth_sim.out
 ```
-
-After execution, the simulation generates the waveform file:
 
 ```
 pre_synth_sim.vcd
@@ -221,9 +99,7 @@ gtkwave output/pre_synth_sim/pre_synth_sim.vcd
 
 ---
 
-## Key Signals
-
-Focus on the **two primary signals**:
+## Key Signals 🖲️
 
 * **`CLK`** → Clock signal generated by the PLL, ensuring synchronous operation across all SoC modules.
 * **`OUT`** → DAC output, representing digital-to-analog conversion. Changes in the RVMYTH core digital values can be observed in real time.
@@ -239,9 +115,7 @@ This workflow provides **hands-on learning** of digital-to-analog interfacing an
 
 ---
 
-
-
-## RTL Synthesis of `vsdbabysoc` using Yosys⚙️
+# RTL Synthesis of `vsdbabysoc` using Yosys ⚙️
 
 ### Steps
 
@@ -252,49 +126,43 @@ This workflow provides **hands-on learning** of digital-to-analog interfacing an
    ```
 
 2. **Read Verilog RTL source files**
-   These files contain the design description of the SoC.
 
    ```tcl
-   # Read Verilog RTL files
    read_verilog -sv -I src/include src/module/vsdbabysoc.v
    read_verilog -sv -I src/include src/module/rvmyth.v
    read_verilog -sv -I src/include src/module/clk_gate.v
    ```
 
 3. **Read standard cell libraries**
-   These libraries define the characteristics of the standard cells used for synthesis.
 
    ```tcl
-   # Read standard cell libraries
    read_liberty -lib src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
    read_liberty -lib src/lib/avsddac.lib
    read_liberty -lib src/lib/avsdpll.lib
    ```
 
 4. **Run synthesis**
-   Specify the **top module** of the design (`vsdbabysoc`).
 
    ```tcl
    synth -top vsdbabysoc
    ```
 
 5. **Technology mapping using ABC**
-   Map the synthesized design to standard cells defined in the liberty file.
 
    ```tcl
    abc -liberty src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
    ```
 
-6. **Visualize synthesized design**
-   Yosys can display a graphical view of the synthesized circuit.
+6. **Visualize synthesized design 🖼️**
 
    ```tcl
    show
    ```
-7. **Synthesis for Other Modules**
-The same synthesis and visualization workflow applied to `vsdbabysoc` can also be performed for individual modules such as `clk_gate` and `rvmyth`.  
-By specifying the desired module as the top module in Yosys, you can generate and inspect their respective gate-level netlists, allowing detailed analysis of each component of the design.
 
+7. **Synthesis for Other Modules**
+   The same workflow can be performed for individual modules like `clk_gate` and `rvmyth` to inspect their respective gate-level netlists.
+
+---
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/c1875965-6dc8-4284-a4d9-708f73d02390" width="800" />
@@ -311,26 +179,22 @@ By specifying the desired module as the top module in Yosys, you can generate an
   <p><b>Fig: Synthesized rvmyth netlist</b></p>
 </div>
 
-## Note:💡
-The rvmyth module is a RISC-V based CPU core. Consequently, the synthesized netlist is extremely large and complex, containing numerous interconnected logic elements. Due to its size, its difficult to display the netlist on a single screen, which highlights the scale and intricacy of this processor design.
+---
+
+## Note 💡
+
+The `rvmyth` module is a RISC-V based CPU core. Its synthesized netlist is extremely large and cannot fit on a single screen, highlighting the **scale and complexity** of the processor design.
 
 ---
 
-Absolutely! I’ve rewritten your **Post-Synthesis Simulation (Gate-Level Simulation)** section to match the style, formatting, and clarity of your **Pre-Synthesis Simulation** section, making it GitHub-ready, concise, and professional.
+# Post-Synthesis Simulation of VSDBabySoC ⚡
+
+Post-synthesis simulation (Gate-Level Simulation) verifies the functionality of the **synthesized design**.
+The simulation generates a **VCD (Value Change Dump) file**, viewable in **GTKWave**.
 
 ---
 
-
-## Post-Synthesis Simulation of VSDBabySoC ⚡
-
-Post-synthesis simulation, also known as **Gate-Level Simulation (GLS)**, verifies the functionality of the **synthesized design** including the mapped standard cells.
-The simulation generates a **VCD (Value Change Dump) file**, which can be visualized using **GTKWave**.
-
----
-
-## Compiling the Testbench
-
-To compile the VSDBabySoC **after synthesis**, use the following command:
+## Compiling the Testbench 🖥️
 
 ```bash
 iverilog -o output/post_synth_sim/post_synth_sim.out -DPOST_SYNTH_SIM -I src/include -I src/module src/module/testbench.v
@@ -338,15 +202,13 @@ iverilog -o output/post_synth_sim/post_synth_sim.out -DPOST_SYNTH_SIM -I src/inc
 
 **Explanation:**
 
-* `-DPOST_SYNTH_SIM` → Defines a macro for **post-synthesis simulation**.
-* `-I src/include -I src/module` → Adds include paths for headers and Verilog modules.
-* `-o output/post_synth_sim/post_synth_sim.out` → Specifies the output executable location.
+* `-DPOST_SYNTH_SIM` → Macro for post-synthesis simulation.
+* `-I src/include -I src/module` → Include paths for headers and modules.
+* `-o output/post_synth_sim/post_synth_sim.out` → Output executable location.
 
 ---
 
-## Running the Simulation
-
-### Steps
+## Running the Simulation ▶️
 
 ```bash
 # 1. Navigate to the post-synthesis simulation directory
@@ -355,8 +217,6 @@ cd vsdbabysoc/output/post_synth_sim
 # 2. Run the post-synthesis simulation executable
 ./post_synth_sim.out
 ```
-
-After execution, the simulation generates the waveform file:
 
 ```
 post_synth_sim.vcd
@@ -377,37 +237,14 @@ gtkwave output/post_synth_sim/post_synth_sim.vcd
   <p><b>Fig: Post-Synthesis Simulation Key Signals</b></p>
 </div>
 
+---
 
-## Key Signals
+## Key Signals 🖲️
 
-Focus on the **primary signals**:
-
-* **`CLK`** → Clock signal of the RVMYTH core, ensuring synchronous operation.
+* **`CLK`** → Clock signal of the RVMYTH core.
 * **`reset`** → Reset signal for initializing the RVMYTH core.
-* **`OUT`** → DAC output (simulated as digital due to GLS limitations).
+* **`OUT`** → DAC output (simulated digitally in GLS).
 * **`\core.OUT[9:0]`** → 10-bit output port of the RVMYTH core.
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
