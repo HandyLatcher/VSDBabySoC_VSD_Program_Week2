@@ -33,12 +33,78 @@
 ├── compiled_rvmyth.v
 ├── compiled_rvmyth_gen.v
 ├── images
-│   └── ...
+│   ├── centralized_avsddac.png
+│   ├── inside_dac.png
+│   ├── inside_pll.png
+│   ├── openlane_flow.png
+│   ├── physical_design.png
+│   ├── post_routing_sim.png
+│   ├── post_synth_sim.png
+│   ├── pre_synth_sim.png
+│   ├── rvmyth_layout.png
+│   ├── selected_dac.png
+│   ├── selected_pll.png
+│   ├── vsdbabysoc_block_diagram.png
+│   └── vsdbabysoc_layout.png
 ├── out
 ├── output
-│   └── ...
+│   ├── compiled_tlv
+│   │   └── rvmyth.v
+│   ├── post_synth_sim
+│   │   ├── post_synth_sim.out
+│   │   └── post_synth_sim.vcd
+│   ├── pre_synth_sim
+│   │   ├── pre_synth_sim.out
+│   │   └── pre_synth_sim.vcd
+│   └── synth
+│       ├── synth.log
+│       └── vsdbabysoc.synth.v
 └── src
-    └── ...
+    ├── gds
+    │   ├── avsddac.gds
+    │   └── avsdpll.gds
+    ├── gls_model
+    │   ├── primitives.v
+    │   └── sky130_fd_sc_hd.v
+    ├── include
+    │   ├── sandpiper.vh
+    │   ├── sandpiper_gen.vh
+    │   ├── sp_default.vh
+    │   └── sp_verilog.vh
+    ├── layout_conf
+    │   ├── rvmyth
+    │   │   ├── config.tcl
+    │   │   └── pin_order.cfg
+    │   └── vsdbabysoc
+    │       ├── config.tcl
+    │       ├── macro.cfg
+    │       └── pin_order.cfg
+    ├── lef
+    │   ├── avsddac.lef
+    │   └── avsdpll.lef
+    ├── lib
+    │   ├── avsddac.lib
+    │   ├── avsdpll.lib
+    │   └── sky130_fd_sc_hd__tt_025C_1v80.lib
+    ├── module
+    │   ├── avsddac.v
+    │   ├── avsdpll.v
+    │   ├── clk_gate.v
+    │   ├── pseudo_rand.sv
+    │   ├── pseudo_rand_gen.sv
+    │   ├── rvmyth.tlv
+    │   ├── rvmyth.v
+    │   ├── rvmyth_gen.v
+    │   ├── testbench.rvmyth.post-routing.v
+    │   ├── testbench.v
+    │   └── vsdbabysoc.v
+    ├── script
+    │   ├── sta.conf
+    │   ├── verilog_to_lib.pl
+    │   └── yosys.ys
+    └── sdc
+        ├── vsdbabysoc_layout.sdc
+        └── vsdbabysoc_synthesis.sdc
 ```
 
 ---
