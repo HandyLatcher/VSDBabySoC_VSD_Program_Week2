@@ -243,7 +243,7 @@ This workflow provides **hands-on learning** of digital-to-analog interfacing an
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/8ec3c9bf-ea76-4152-844e-646668175fcd" width="800" />
-  <p><b>Fig: Synthesized rvmyth netlist</b></p>
+  <p><b>Fig: Hierarchical structure of the vsdbabysoc SoC design</b></p>
 </div>
 
 ---
@@ -251,6 +251,10 @@ This workflow provides **hands-on learning** of digital-to-analog interfacing an
 ## Note 💡
 
 The `rvmyth` module is a RISC-V based CPU core. Its synthesized netlist is extremely large and cannot fit on a single screen, highlighting the **scale and complexity** of the processor design.
+
+---
+## Hierarchical Design Resource Report🗂️
+
 
 ---
 
