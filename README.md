@@ -97,7 +97,7 @@ A **PLL** synchronizes output frequency with an input reference.
 ## 7.)🎚️Digital-to-Analog Converter (DAC)
 Converts digital input into an analog voltage.  
 
-## Types
+## Types of DACs⚡
 
 ## Weighted Resistor DAC:
 Uses resistors with bit-dependent weights.
@@ -171,3 +171,5 @@ Open-source contributors of <b>Yosys</b>, <b>Sky130 PDK</b>, and related tools �
 <p><p>👨‍💻 Author: <i><a href="https://github.com/HandyLatcher">Aryansh Mehrotra</a></i> ✨</p>
 
 </div>
+
+---
