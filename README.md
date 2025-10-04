@@ -3,15 +3,21 @@
 ## 🎯 Objective
 Understand **SoC fundamentals** and practice **functional modelling** of BabySoC using **Icarus Verilog** and **GTKWave**.
 
+<p align="center">
+  <img src="https://img.shields.io/badge/RISC--V-gray?label=RISC--V&message=Workshop&color=blue" />
+  <img src="https://img.shields.io/badge/VSD-gray?label=VSD&message=Program&color=orange" />
+  <img src="https://img.shields.io/badge/Open--Source-gray?label=Open--Source&message=Journey&color=green" />
+</p>
+
 ---
 
-## 1. What is a System-on-Chip (SoC)?
+## 1.🖥️What is a System-on-Chip (SoC)?
 A **System-on-Chip (SoC)** integrates all essential components of a computer system into a **single chip**, including CPU, memory, peripherals, and interconnects.  
 This allows for **compact size, low power consumption, cost efficiency, and high performance**, making SoCs ideal for smartphones, wearables, tablets, and embedded systems.
 
 ---
 
-## 2. Key Components of a Typical SoC
+## 2.⚙️Key Components of a Typical SoC
 
 | Component | Description |
 |-----------|-------------|
@@ -26,7 +32,7 @@ This allows for **compact size, low power consumption, cost efficiency, and high
 
 ---
 
-## 3. Types of SoCs
+## 3.📝Types of SoCs
 
 | Type | Features | Example Applications |
 |------|----------|--------------------|
@@ -40,7 +46,7 @@ This allows for **compact size, low power consumption, cost efficiency, and high
 
 ---
 
-## 4. Introduction to VSDBabySoC
+## 4.🧩Introduction to VSDBabySoC
 **VSDBabySoC** is a compact RISC-V-based SoC designed for **learning and experimentation**.  
 It facilitates **simultaneous testing of three open-source IP cores** and calibration of analog components.
 
@@ -55,7 +61,7 @@ It facilitates **simultaneous testing of three open-source IP cores** and calibr
 
 ---
 
-## 5. BabySoC Functional Flow
+## 5.🔄BabySoC Functional Flow
 
 | Stage | Function |
 |-------|---------|
@@ -65,7 +71,7 @@ It facilitates **simultaneous testing of three open-source IP cores** and calibr
 
 ---
 
-## 6. Phase-Locked Loop (PLL)
+## 6.⏱️Phase-Locked Loop (PLL)
 A **PLL** synchronizes output frequency with an input reference.  
 
 **Components:**
@@ -88,7 +94,7 @@ A **PLL** synchronizes output frequency with an input reference.
 
 ---
 
-## 7. Digital-to-Analog Converter (DAC)🎚️
+## 7.)🎚️Digital-to-Analog Converter (DAC)
 Converts digital input into an analog voltage.  
 
 ## Types
