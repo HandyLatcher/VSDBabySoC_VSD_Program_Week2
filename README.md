@@ -150,6 +150,7 @@ Week 2 focused on **SoC fundamentals, BabySoC architecture, and functional model
 
 <p>Special thanks to:<br>
 <a href="https://github.com/manili/VSDBabySoC.git">Mohammad A. Nili</a> for creating and sharing the BabySoC design files used in this project.💡<br>
+<a href="https://github.com/stevehoover">Steve Hoover</a> for developing and sharing the RVMYTH CPU and workshop materials. 🖥️<br>
 <a href="https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/">Kunal Ghosh</a> for leading open-source VLSI education initiatives 🚀<br>
 Open-source contributors of <b>Yosys</b>, <b>Sky130 PDK</b>, and related tools 🛠️
 </p>
