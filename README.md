@@ -1,12 +1,12 @@
-# 📘 Week 2 – BabySoC Fundamentals & Functional Modelling
+# 📘BabySoC Fundamentals & Functional Modelling
 
 ## 🎯 Objective
 Understand **SoC fundamentals** and practice **functional modelling** of BabySoC using **Icarus Verilog** and **GTKWave**.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/RISC--V-gray?label=RISC--V&message=Workshop&color=blue" />
-  <img src="https://img.shields.io/badge/VSD-gray?label=VSD&message=Program&color=orange" />
-  <img src="https://img.shields.io/badge/Open--Source-gray?label=Open--Source&message=Journey&color=green" />
+  <img src="https://img.shields.io/badge/RISC--V-Workshop-blue?logo=riscv&logoColor=white" />
+  <img src="https://img.shields.io/badge/VSD-Program-orange" />
+  <img src="https://img.shields.io/badge/Open--Source-Journey-success?logo=opensourceinitiative&logoColor=white" />
 </p>
 
 ---
