@@ -99,14 +99,14 @@ Converts digital input into an analog voltage.
 
 ## Types of DACs⚡
 
-## Weighted Resistor DAC:
+### Weighted Resistor DAC:
 Uses resistors with bit-dependent weights.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/cbd7db5f-83fb-4912-b8d9-fefb041de4e3" width="800" alt="BabySoC DAC Illustration" />
 </p>
 
-## R-2R Ladder DAC:
+### R-2R Ladder DAC:
 Uses a repeating resistor network for simple scaling.
 
 <p align="center">
