@@ -35,7 +35,7 @@ This allows for **compact size, low power consumption, cost efficiency, and high
 | Application-Specific (ASIC) | Custom-designed for high performance | AI accelerators, graphics cards |
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/efaf2c1c-7c47-4d5c-af64-65e64a5e12eb" width="800" alt="SoC Block Diagram" />
+  <img src="https://github.com/user-attachments/assets/e923a575-3ca0-4222-8007-8f0bb1b8c2b5" width="800" alt="Image" />
 </p>
 
 ---
@@ -78,7 +78,7 @@ A **PLL** synchronizes output frequency with an input reference.
 **Function:** Locks output frequency and phase to the input; may use feedback dividers to multiply frequency.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/e5bf9c2e-a55b-499b-b0ee-1854b4c7913b" width="800" alt="BabySoC Functional Flow" />
+  <img src="https://github.com/user-attachments/assets/e5e65886-2f32-494a-878d-c13788d3cc39" width="800" alt="Image" />
 </p>
 
 
