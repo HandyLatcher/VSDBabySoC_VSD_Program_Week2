@@ -1,3 +1,9 @@
+# 🗒️Notes
+
+This section highlights key terms and concepts encountered during the study of BabySoC functional modelling. It serves as a quick reference to understand important technical details and clarify new terminology used throughout the project.
+
+---
+
 ## 1. CPU vs CPU Core🖥️
 
 - **CPU (Central Processing Unit)**: Entire processor chip, acts as the brain of the computer.  
