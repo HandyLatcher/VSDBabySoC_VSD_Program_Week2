@@ -143,3 +143,30 @@ Functional modelling **verifies logic** before RTL and physical design:
 Week 2 focused on **SoC fundamentals, BabySoC architecture, and functional modelling**, providing a foundation in **digital-analog interfacing, clock management, and SoC design**, preparing for RTL design and SoC tapeout exercises.
 
 ---
+
+<div align="center">
+
+<h2>🙏 Acknowledgements</h2>
+
+<p>Special thanks to:<br>
+<a **[Mohammad A. Nili](https://github.com/manili/VSDBabySoC.git)** for creating and sharing the BabySoC design files used in this project.💡<br>
+<a href="https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/">Kunal Ghosh</a> for leading open-source VLSI education initiatives 🚀<br>
+Open-source contributors of <b>Yosys</b>, <b>Sky130 PDK</b>, and related tools 🛠️
+</p>
+
+<h2>🔗 Useful Links</h2>
+
+<p>
+
+[Yosys](https://github.com/YosysHQ/yosys) – RTL synthesis ⚡<br>
+[Icarus Verilog](https://github.com/steveicarus/iverilog) – Verilog simulation 🖥️<br>
+[SkyWater 130nm Open PDK](https://github.com/google/skywater-pdk) – Open-source process design kit 🧩
+
+</p>
+
+<h2>📜 License</h2>
+<p>This project is licensed under the <b>Creative Commons Attribution 4.0 International License (CC BY 4.0)</b>.</p>
+
+<p><p>👨‍💻 Author: <i><a href="https://github.com/HandyLatcher">Aryansh Mehrotra</a></i> ✨</p>
+
+</div>
