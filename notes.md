@@ -1,6 +1,13 @@
-# 📘 Detailed Notes
+## 1. CPU vs CPU Core🖥️
 
-## 1. Working of a Phase-Locked Loop (PLL)
+- **CPU (Central Processing Unit)**: Entire processor chip, acts as the brain of the computer.  
+- **CPU Core**: Individual processing unit inside the CPU that executes instructions.  
+➡️ A CPU may contain multiple cores (dual-core, quad-core, etc.) for parallel processing.
+
+
+---
+
+## 2. Working of a Phase-Locked Loop (PLL)🔁
 
 **Step 1: Initial Condition**  
 - Input frequency = 100 Hz  
@@ -30,7 +37,7 @@
 
 ---
 
-## 2. Weighted Resistor DAC
+## 3. Weighted Resistor DAC🎚️
 
 **Example: 3-bit, Vref=20 V**  
 - Input = `101` → Decimal = 5  
@@ -55,11 +62,16 @@
 
 **Full-Scale Check (111)**  
 - Currents = 2 + 1 + 0.5 = 3.5 mA  
-- Output = 20 V ✅  
+- Output = 20 V ✅
 
 ---
 
-## 3. R-2R Ladder DAC
+## 4. R-2R Ladder DAC🔀
+
 - Uses resistor ladder with MSB at rightmost branch.  
 - Thevenin’s theorem used to calculate equivalent Vout.  
-- Advantage: only two resistor values (R, 2R).  
+- Advantage: only two resistor values (R, 2R).
+
+---
+
+
