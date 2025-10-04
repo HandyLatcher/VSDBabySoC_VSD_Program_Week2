@@ -197,7 +197,10 @@ This workflow provides **hands-on learning** of digital-to-analog interfacing an
    read_verilog -sv -I src/include src/module/clk_gate.v
    ```
 
-3. **Read standard cell libraries**
+# Note💡
+The files avsddac.v and avsdpll.v are skipped in synthesis because Yosys reports syntax error, unexpected TOK_REAL. This is due to the use of the real data type, which Yosys does not support for synthesis. These modules are instead treated as black boxes and used only in simulation.
+
+4. **Read standard cell libraries**
 
    ```tcl
    read_liberty -lib src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -205,25 +208,25 @@ This workflow provides **hands-on learning** of digital-to-analog interfacing an
    read_liberty -lib src/lib/avsdpll.lib
    ```
 
-4. **Run synthesis**
+5. **Run synthesis**
 
    ```tcl
    synth -top vsdbabysoc
    ```
 
-5. **Technology mapping using ABC**
+6. **Technology mapping using ABC**
 
    ```tcl
    abc -liberty src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
    ```
 
-6. **Visualize synthesized design 🖼️**
+7. **Visualize synthesized design 🖼️**
 
    ```tcl
    show
    ```
 
-7. **Synthesis for Other Modules**
+8. **Synthesis for Other Modules**
    The same workflow can be performed for individual modules like `clk_gate` and `rvmyth` to inspect their respective gate-level netlists.
 
 
